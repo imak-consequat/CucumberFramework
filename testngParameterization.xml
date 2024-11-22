@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParameterizedTestSuite">
+<parameter name="url" value="http://leaftaps.com/opentaps/"> </parameter>
+<parameter name="username" value="DemoSalesManager"> </parameter>
+<parameter name="password" value="crmsfa"> </parameter>
+  <test name="ParameterizedTest">
+    <classes>
+      <!--<class name="parameterization.MergeLead"/>
+      <class name="parameterization.DuplicateLead"/>
+      <class name="parameterization.EditLead"/>-->
+            <class name="parameterization.CreateLead"/>
+      <!--<class name="parameterization.DeleteLead"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
